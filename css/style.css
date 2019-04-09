@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #000000;
+  --tertiary-color: #FF5D73;
+  --title-font: "Roboto Mono", monospace;
+  --copy-font: "Roboto", sans-serif;
+}
+
+body {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-family: var(--copy-font);
+  transition: all 0.2s ease-in-out;
+}
+
+button {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.container {
+  display: block;
+  max-width: 1280px;
+  padding: 30px 20px;
+  margin: 0 auto;
+}
+.container--small {
+  max-width: 900px;
+}
+
+.page-title {
+  display: inline-block;
+  font-size: 68px;
+  font-family: var(--title-font);
+  position: relative;
+}
+.page-title:before {
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  height: 18px;
+  width: 100%;
+  background-color: var(--tertiary-color);
+  content: "";
+  z-index: -1;
+}
+
+.description {
+  font-size: 32px;
+  font-family: var(--copy-font);
+}
+
+.example {
+  margin-bottom: 20px;
+}
+.example p {
+  font-size: 24px;
+}
+
+.modal {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  transition: opacity 0.2s ease-in-out;
+}
+.modal--open {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal h1 {
+  position: absolute;
+  font-size: 68px;
+  color: var(--primary-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

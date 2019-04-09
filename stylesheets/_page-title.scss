@@ -1,0 +1,17 @@
+.page-title {
+	display: inline-block;
+	font-size: 68px;
+	font-family: var(--title-font);
+	position: relative;
+
+	&:before {
+		position: absolute;
+		left: 0;
+		bottom: 3px;
+		height: 18px;
+		width: 100%;
+		background-color: var(--tertiary-color);
+		content: '';
+		z-index: -1;
+	}
+}
